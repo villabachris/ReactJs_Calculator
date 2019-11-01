@@ -4,10 +4,13 @@ class CalResult extends Component {
 
     render() {
         let {result} = this.props;
+
         return (
         <div className="result">
-            <p>{result}</p>
+            <input type="textarea" disabled value={result}/>
         </div>
         );  
     }
 } 
+
+export default CalResult;
